@@ -8,7 +8,7 @@
     <meta name="keywords" content="HTML,CSS,XML,JavaScript,Cryptocurrency,Web Design, Blockchain, NodeJs, Angular2, Angular6, Whitepaper, Smart Contract">
     <meta name="author" content="Osama Khawar, Nira Naveed">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="icon" href="images/favicon.png" type="image/png">
     <title>Ideofuzion</title>
     <!-- Bootstrap CSS -->
     <!--     <link rel="stylesheet" href="css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
@@ -16,8 +16,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="fonts/titillium/stylesheet.css">
     <link rel="stylesheet" href="fonts/geosans/stylesheet.css">
+    <link rel="stylesheet" href="fonts/raleway/stylesheet.css">
     <link rel="stylesheet" type="text/css" href="css/slick.css" />
     <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="css/toastr.css" rel="stylesheet"/>
     <link href="css/styles.css" rel="stylesheet">
 
 
@@ -26,10 +29,10 @@
 <body>
 
 
-    <section class="nav-section">
+    <section class="nav-section" id="about-section">
 
 
-        <nav class="navbar navbar-expand-md navbar-dark navbar-top">
+        <nav id="navbar" class="navbar navbar-expand-md  navbar-top  fixed-top">
 
             <div class="container-fluid">
 
@@ -45,60 +48,67 @@
                     <!-- Links -->
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link 1</a>
+                            <a class="nav-link" href="#about-section">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link 2</a>
+                            <a class="nav-link" href="#why-section">Why Ideofuzion</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link 3</a>
+                            <a class="nav-link" href="#facts-section">Company Facts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#team-section">Our Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects-section">Recent Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact-section">Contact Us</a>
                         </li>
                     </ul>
                 </div>
 
             </div>
-
-
-            <div class="blue-bg">
-
-
-                <div class="video-wrapper">
-                    <iframe width="560" height="315" src="//www.youtube.com/embed/f890SC1schE" frameborder="0" allowfullscreen></iframe>
-                </div>
-
-
-                <div class="vertical-nav">
-
-                    <ul class="vertical-nav-ul">
-
-                        <li>
-                            <a href="#" class="titi-regular active" title="About Secton">About Us</a>
-                        </li>
-                        <li>
-                            <a href="#" class="titi-regular" title="Why Ideofuzion">Why Ideofuzion</a>
-                        </li>
-                        <li>
-                            <a href="#" class="titi-regular" title="Company Facts">Company Facts</a>
-                        </li>
-                        <li>
-                            <a href="#" class="titi-regular" title="Our Team">Our Team</a>
-                        </li>
-                        <li>
-                            <a href="#" class="titi-regular" title="Recent Projects">Recent Projects</a>
-                        </li>
-                        <li>
-                            <a href="#" class="titi-regular" title="Recent Projects">Contact Us</a>
-                        </li>
-
-                    </ul>
-                </div>
-
-
-
-            </div>
-
 
         </nav>
+
+        <div class="blue-bg">
+
+
+            <div class="video-wrapper">
+                <iframe width="560" height="315" src="//www.youtube.com/embed/f890SC1schE" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+
+            <div class="vertical-nav">
+
+                <ul class="vertical-nav-ul">
+
+                    <li>
+                        <a href="#about-section" class="titi-regular active" title="About Secton">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#why-section" class="titi-regular" title="Why Ideofuzion">Why Ideofuzion</a>
+                    </li>
+                    <li>
+                        <a href="#facts-section" class="titi-regular" title="Company Facts">Company Facts</a>
+                    </li>
+                    <li>
+                        <a href="#team-section" class="titi-regular" title="Our Team">Our Team</a>
+                    </li>
+                    <li>
+                        <a href="#projects-section" class="titi-regular" title="Recent Projects">Recent Projects</a>
+                    </li>
+                    <li>
+                        <a href="#contact-section" class="titi-regular" title="Recent Projects">Contact Us</a>
+                    </li>
+
+                </ul>
+            </div>
+
+
+
+        </div>
 
 
     </section>
@@ -174,7 +184,7 @@
 
         <div class="about-strip">
 
-            <img src="images/about-strip.png" title="About us" alt="About us" />
+            <!--   <img src="images/about-strip.png" title="About us" alt="About us" /> -->
 
         </div>
 
@@ -182,7 +192,7 @@
 
 
 
-    <section class="why-section">
+    <section class="why-section" id="why-section">
 
 
         <div class='heading-box'>
@@ -295,19 +305,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
                 </div>
 
             </div>
@@ -317,15 +314,925 @@
 
         </div>
 
+        <div id="facts-section" class="anchor"/></div>
+    </section>
+
+
+
+    <section class="facts-section" >
+
+
+        <div class="container">
+
+
+            <div class='heading-box'>
+                <h1 class="text-uppercase titi-regular facts-head">Company
+                    <span class="primary-color titi-bold">Facts</span>
+                </h1>
+            </div>
+
+            <div class="row">
+
+
+                <div class="col-md-3">
+                    <div class="progress blue">
+                        <span class="progress-left">
+                            <span class="progress-bar"></span>
+                        </span>
+                        <span class="progress-right">
+                            <span class="progress-bar"></span>
+                        </span>
+                        <div class="progress-value">218</div>
+                    </div>
+                    <h1 class="progress-bottom">Completed Projects</h1>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="progress blue">
+                        <span class="progress-left">
+                            <span class="progress-bar"></span>
+                        </span>
+                        <span class="progress-right">
+                            <span class="progress-bar"></span>
+                        </span>
+                        <div class="progress-value">360</div>
+                    </div>
+                    <h1 class="progress-bottom">Hours of Work/Month</h1>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="progress blue">
+                        <span class="progress-left">
+                            <span class="progress-bar"></span>
+                        </span>
+                        <span class="progress-right">
+                            <span class="progress-bar"></span>
+                        </span>
+                        <div class="progress-value">135</div>
+                    </div>
+                    <h1 class="progress-bottom">Solved Tickets</h1>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="progress blue">
+                        <span class="progress-left">
+                            <span class="progress-bar"></span>
+                        </span>
+                        <span class="progress-right">
+                            <span class="progress-bar"></span>
+                        </span>
+                        <div class="progress-value">174</div>
+                    </div>
+                    <h1 class="progress-bottom">Satisfied Clients</h1>
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+        <div id="team-section" class="anchor"></div>
 
     </section>
 
 
 
+    <section>
+
+        <div class="team-section" >
+            <div class="container">
+
+                <div class='heading-box'>
+                    <h1 class="text-uppercase titi-regular our-team">Our
+                        <span class="primary-color titi-bold">Team</span>
+                    </h1>
+                </div>
+
+                <div class="mt-80 width-80 mar-0-auto">
+                    <div class="row ">
+                        <div class="col-md-3 no-padding">
+                            <div class="team-div">
+                                <img class="width-100 grayish-effect" src="images/team/ali.jpg" alt=" Ali Zain Image" title="Ali Zain CEO Ideofuzion">
+                                <div class="team-overlay">
+                                    <div class="team-overlay-inner">
+                                        <p class="raleway-bold font-20">
+                                            Ali Zain
+                                        </p>
+                                        <p class="raleway-light">
+                                            Cheif Executive Officer (CEO)
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-3 no-padding">
+                            <div class="team-div">
+                                <img class="width-100 grayish-effect" src="images/team/yasir.png" alt="Yasir Rizvi Image" title="Yasir Rizvi CTO Ideofuzion">
+                                <div class="team-overlay">
+                                    <div class="team-overlay-inner">
+                                        <p class="titi-bold font-20">
+                                            Yasir Rizvi
+                                        </p>
+                                        <p class="geo-light">
+                                            Cheif Technical Officer (CTO)
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 no-padding">
+                            <div class="team-div">
+                                <img class="width-100 grayish-effect" src="images/team/mustafa.png" alt="Mustafa J.Iftakhar Image" title="Mustafa J.Iftakhar">
+                                <div class="team-overlay">
+                                    <div class="team-overlay-inner">
+                                        <p class="titi-bold font-20">
+                                            Mustafa J.Iftakhar
+                                        </p>
+                                        <p class="geo-light">
+                                            Managing Partner
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 no-padding">
+                            <div class="team-div">
+                                <img class="width-100 grayish-effect" src="images/team/shan.png" alt="Syed Shan Alam Image" title="Syed Shan Alam">
+                                <div class="team-overlay">
+                                    <div class="team-overlay-inner">
+                                        <p class="titi-bold font-20">
+                                            Syed Shan Alam
+                                        </p>
+                                        <p class="geo-light">
+                                            Manager Business Operations & Marketing
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 no-padding">
+                            <div class="team-div">
+                                <img class="width-100 grayish-effect" src="images/team/shakil.jpg" alt="Shakil Muhammad Image" title="Shakil Muhammad">
+                                <div class="team-overlay">
+                                    <div class="team-overlay-inner">
+                                        <p class="titi-bold font-20">
+                                            Shakil Muhammad
+                                        </p>
+                                        <p class="geo-light">
+                                            Blockchain Expert
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 no-padding">
+                            <div class="team-div">
+                                <img class="width-100 grayish-effect" src="images/team/sajjad.jpg" alt="Ali Sajjad Rizvi Image" title="Ali Sajjad Rizvi">
+                                <div class="team-overlay">
+                                    <div class="team-overlay-inner">
+                                        <p class="titi-bold font-20">
+                                            Ali Sajjad Rizvi
+                                        </p>
+                                        <p class="geo-light">
+                                            Software Developer
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-3 no-padding">
+                            <div class="team-div">
+                                <img class="width-100 grayish-effect" src="images/team/osama.jpg" alt="Osama Khawar" title="Osama Khawar (Senior Frontend Developer)">
+                                <div class="team-overlay">
+                                    <div class="team-overlay-inner">
+                                        <p class="titi-bold font-20">
+                                            Osama Khawar
+                                        </p>
+                                        <p class="geo-light">
+                                            Senior Frontend Developer
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 no-padding">
+                            <div class="team-div">
+                                <img class="width-100 grayish-effect" src="images/team/amin.png" alt="Mohammad Amin Jan" title="Mohammad Amin Jan">
+                                <div class="team-overlay">
+                                    <div class="team-overlay-inner">
+                                        <p class="titi-bold font-20">
+                                            Mohammad Amin Jan
+                                        </p>
+                                        <p class="geo-light">
+                                            Project Manager
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 no-padding">
+                            <div class="team-div">
+                                <img class="width-100 grayish-effect" src="images/team/talha.jpg" alt="Talha Malik Image" title="Talha Malik">
+                                <div class="team-overlay">
+                                    <div class="team-overlay-inner">
+                                        <p class="titi-bold font-20">
+                                            Talha Malik
+                                        </p>
+                                        <p class="geo-light">
+                                            Blockchain Developer
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 no-padding">
+                            <div class="team-div">
+                                <img class="width-100 grayish-effect" src="images/team/nira.jpg" alt="Nira Naveed Image" title="Nira Naveed">
+                                <div class="team-overlay">
+                                    <div class="team-overlay-inner">
+                                        <p class="titi-bold font-20">
+                                            Nira Naveed
+                                        </p>
+                                        <p class="geo-light">
+                                            Frontend Developer
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-3 no-padding">
+                            <div class="team-div">
+                                <img class="width-100 grayish-effect" src="images/team/dania.jpg" alt="Dania Ilmas" title="Dania Ilmas">
+                                <div class="team-overlay">
+                                    <div class="team-overlay-inner">
+                                        <p class="titi-bold font-20">
+                                            Dania Ilmas
+                                        </p>
+                                        <p class="geo-light">
+                                            Senior SQA Engineer
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 no-padding">
+                            <div class="team-div">
+                                <img class="width-100 grayish-effect" src="images/team/sarmad.jpg" alt="Sarmad Mujaddid Image" title="Sarmad Mujaddid Image">
+                                <div class="team-overlay">
+                                    <div class="team-overlay-inner">
+                                        <p class="titi-bold font-20">
+                                            Sarmad Mujaddid
+                                        </p>
+                                        <p class="geo-light">
+                                            SQA Engineer
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-3 no-padding">
+                            <div class="team-div">
+                                <img class="width-100 grayish-effect" src="images/team/naqash.jpg" alt="Naqash Ahmed Image" title="Naqash Ahmed">
+                                <div class="team-overlay">
+                                    <div class="team-overlay-inner">
+                                        <p class="titi-bold font-20">
+                                            Naqash Ahmed
+                                        </p>
+                                        <p class="geo-light">
+                                            M.E.A.N Stack Developer
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 no-padding">
+                            <div class="team-div">
+                                <img class="width-100 grayish-effect" src="images/team/salman.jpg" alt="Salman Mansoor Image" title="Salman Mansoor">
+                                <div class="team-overlay">
+                                    <div class="team-overlay-inner">
+                                        <p class="titi-bold font-20">
+                                            Salman Mansoor
+                                        </p>
+                                        <p class="geo-light">
+                                            M.E.A.N Stack Developer
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-3 no-padding">
+                            <div class="team-div">
+                                <img class="width-100 grayish-effect" src="images/team/araib.jpg" alt="Araib Shafiq" title="Araib Shafiq">
+                                <div class="team-overlay">
+                                    <div class="team-overlay-inner">
+                                        <p class="titi-bold font-20">
+                                            Araib Shafiq
+                                        </p>
+                                        <p class="geo-light">
+                                            Android Developer
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 no-padding">
+                            <div class="team-div">
+                                <img class="width-100 grayish-effect" src="images/team/usama.jpg" alt="Usama Ateeq Image" title="Usama Ateeq Image">
+                                <div class="team-overlay">
+                                    <div class="team-overlay-inner">
+                                        <p class="titi-bold font-20">
+                                            Usama Ateeq
+                                        </p>
+                                        <p class="geo-light">
+                                            iOS Developer
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center">
+                        <div class="col-md-3 no-padding">
+                            <div class="team-div">
+                                <img class="width-100 grayish-effect" src="images/team/hassan.png" alt="Hassan Ahmad Image" title="Hassan Ahmad">
+                                <div class="team-overlay">
+                                    <div class="team-overlay-inner">
+                                        <p class="titi-bold font-20">
+                                            Hassan Ahmad
+                                        </p>
+                                        <p class="geo-light">
+                                            Graphics Designer
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 no-padding">
+                            <div class="team-div">
+                                <img class="width-100 grayish-effect" src="images/team/aoun.png" alt="Aoun Naqvi Image" title="Aoun Naqvi">
+                                <div class="team-overlay">
+                                    <div class="team-overlay-inner">
+                                        <p class="titi-bold font-20">
+                                            Aoun Naqvi
+                                        </p>
+                                        <p class="geo-light">
+                                            Accounts Manager
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+<div id="projects-section" class='anchor'></div>
+    </section>
+
+
+
+    <section class="projects-section" >
+
+        <div class='heading-box'>
+            <h1 class="text-uppercase titi-regular projects-head">Recent
+                <span class="primary-color titi-bold">Projects</span>
+            </h1>
+        </div>
+
+        <div class="projects-top text-center">
+            <img src="images/mac.png" title="Imac" alt="Ideofuzion Projects">
+        </div>
+
+
+        <div class="container-fluid">
+
+
+            <div class="projects-holder">
+
+
+
+                <div class="projects-slider">
+
+
+                    <div>
+                        <a href="https://www.syncfab.com/" target="_blank">
+                            <div class="one-box">
+
+
+                                <img src="images/projects/syncfab.png" alt="Ideofuzion syncfab" title="Syncfab">
+
+
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div>
+                        <a href="https://loyalcoin.io/" target="_blank">
+                            <div class="one-box">
+
+
+                                <img src="images/projects/loyalcoin.png" alt="Ideofuzion LoyalCoin" title="Loyal Coin">
+
+
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div>
+                        <a href="https://arawtoken.io/" target="_blank">
+                            <div class="one-box">
+
+
+                                <img src="images/projects/arawtoken.png" alt="Ideofuzion Arawtoken" title="Araw Token">
+
+
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div>
+                        <a href="https://www.argylecoin.io/" target="_blank">
+                            <div class="one-box">
+
+
+                                <img src="images/projects/argylecoin.png" alt="Ideofuzion ArgyleCoin" title="Argyle Coin">
+
+
+                            </div>
+                        </a>
+                    </div>
+
+
+
+                    <div>
+                        <a href="https://medpayrx.de/en/" target="_blank">
+                            <div class="one-box">
+
+
+                                <img src="images/projects/medpayrx.png" alt="Ideofuzion MedpayRx" title="MedpayRx">
+
+
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div>
+                        <a href="https://wmu.network/" target="_blank">
+                            <div class="one-box">
+
+
+                                <img src="images/projects/wmu.png" alt="Ideofuzion WMU" title="WMU">
+
+
+                            </div>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="http://www.nametoken.io/" target="_blank">
+                            <div class="one-box">
+
+
+                                <img src="images/projects/nametoken.png" alt="Ideofuzion Nametoken" title="Nametoken">
+
+
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div>
+                        <a href="https://www.digitoken.tech/" target="_blank">
+                            <div class="one-box">
+
+
+                                <img src="images/projects/digitoken.png" alt="Ideofuzion Digitoken" title="Digitoken">
+
+
+                            </div>
+                        </a>
+                    </div>
+
+
+
+                    <div>
+                        <a href="https://www.synthiumhealth.com/" target="_blank">
+                            <div class="one-box">
+
+
+                                <img src="images/projects/sythium.png" alt="Ideofuzion Synthium Health" title="Synthium Health">
+
+
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div>
+                        <a href="https://ibinex.com/" target="_blank">
+                            <div class="one-box">
+
+
+                                <img src="images/projects/ibinex.png" alt="Ideofuzion IBINEX" title="IBINEX">
+
+
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div>
+                        <a href="https://ico.salpay.com/" target="_blank">
+                            <div class="one-box">
+
+
+                                <img src="images/projects/salpaytoken.png" alt="Ideofuzion SALpay" title="SALpay Token">
+
+
+                            </div>
+                        </a>
+                    </div>
 
 
 
 
+                    <div>
+                        <a href="https://cryptoxchange.com/bird.html" target="_blank">
+                            <div class="one-box">
+
+
+                                <img src="images/projects/cryptoxchange.png" alt="Ideofuzion CryptoXchange" title="CryptoXchange">
+
+
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div>
+                        <a href="https://carex.tech/" target="_blank">
+                            <div class="one-box">
+
+
+                                <img src="images/projects/carex.png" alt="Ideofuzion Carex" title="Carex">
+
+
+                            </div>
+                        </a>
+                    </div>
+
+
+
+                    <div>
+                        <a href="https://www.potentiam.io/" target="_blank">
+                            <div class="one-box">
+
+
+                                <img src="images/projects/potentiam.png" alt="Ideofuzion Potentiam" title="Potentiam">
+
+
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div>
+                        <a href="https://amicorum.live" target="_blank">
+                            <div class="one-box">
+
+
+                                <img src="images/projects/amicorum.png" alt="Ideofuzion Amicorum" title="Amicorum">
+
+
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div>
+                        <a href="https://www.deedcoinlaunch.com/" target="_blank">
+                            <div class="one-box">
+
+
+                                <img src="images/projects/deedcoin.png" alt="Ideofuzion DeedCoin" title="DeedCoin">
+
+
+                            </div>
+                        </a>
+                    </div>
+
+
+
+                    <div>
+                        <a href="https://smartstartuptoken.tech/" target="_blank">
+                            <div class="one-box">
+
+
+                                <img src="images/projects/smrt.png" alt="Ideofuzion SMRT" title="SMRT Smart Token">
+
+
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div>
+                        <a href="https://storichain.net/" target="_blank">
+                            <div class="one-box">
+
+
+                                <img src="images/projects/storichain.png" alt="Ideofuzion StoriChain" title="Storichain">
+
+
+                            </div>
+                        </a>
+                    </div>
+
+
+
+                    <div>
+                        <a href="https://bandz.network/" target="_blank">
+                            <div class="one-box">
+
+
+                                <img src="images/projects/bandz.png" alt="Ideofuzion Bandz" title="BandZ Network">
+
+
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div>
+                        <a href="https://projectdelta.io/" target="_blank">
+                            <div class="one-box">
+
+
+                                <img src="images/projects/delta.png" alt="Ideofuzion Project Delta" title="Project Delta">
+
+
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div>
+                        <a href="https://itunes.apple.com/pk/app/ask-april/id1321639559?mt=8" target="_blank">
+                            <div class="one-box">
+
+
+                                <img src="images/projects/april.png" alt="Ideofuzion April" title="April">
+
+
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div>
+                        <a href="http://bitpoint-uk.com/" target="_blank">
+                            <div class="one-box">
+
+
+                                <img src="images/projects/bitpoint.png" alt="Ideofuzion Bitpoint" title="Bitpoint">
+
+
+                            </div>
+                        </a>
+                    </div>
+
+
+
+
+                    <div>
+                        <a href="https://www.teleofitness.com/" target="_blank">
+                            <div class="one-box">
+
+
+                                <img src="images/projects/teleo.png" alt="Ideofuzion Teleo" title="Teleo Fitness App">
+
+
+                            </div>
+                        </a>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+    <section class="offer-section">
+
+        <div class="container-fluid">
+
+            <div class='heading-box'>
+                <h1 class="text-uppercase titi-regular offer-head">What
+                    <span class="secondary-color titi-bold">We offer</span>
+                </h1>
+            </div>
+
+
+            <div class="skills-slider">
+
+
+                <div class="skill-wrap">
+
+                    <div class="skill-box">
+
+                        <div class="image-holder">
+                            <img src="images/contract.png" atl="Smart Contract Development" />
+                        </div>
+
+                        <h1 class="titi-regular">Smart Contract Development</h1>
+
+                        <p class="titi-light">We develop and implement ICOs and Generic Smart Contracts. Creating smart contracts for any application
+                            that require decentalization and secure execution.</p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="skill-wrap">
+
+                    <div class="skill-box">
+
+                        <div class="image-holder">
+                            <img src="images/security.png" atl="Smart Contract Development" />
+                        </div>
+
+                        <h1 class="titi-regular">Smart Contract General & Security Audits</h1>
+
+                        <p class="titi-light">We develop and implement ICOs and Generic Smart Contracts. Creating smart contracts for any application
+                            that require decentalization and secure execution.</p>
+
+                    </div>
+
+                </div>
+
+
+
+
+                <div class="skill-wrap">
+
+                    <div class="skill-box">
+
+                        <div class="image-holder">
+                            <img src="images/wallet.png" atl="Smart Contract Development" />
+                        </div>
+
+                        <h1 class="titi-regular">Cryptocurrency Wallet Development</h1>
+
+                        <p class="titi-light">We develop and implement ICOs and Generic Smart Contracts. Creating smart contracts for any application
+                            that require decentalization and secure execution.</p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+        
+        <div id="contact-section" class="anchor"></div>
+
+    </section>
+
+
+    <!-- contactus section -->
+<section>
+        <div class="team-section no-mar-btm">
+            <div >
+    
+                <div class='heading-box'>
+                    <h1 class="text-uppercase titi-regular our-team">contact
+                        <span class="primary-color titi-bold">us</span>
+                    </h1>
+                </div>
+                <div class="row no-margin contactus-div">
+                                <div class="blue-bg-contactus">
+                    
+                                    <div class="contact-blue-bg-inner">
+                                        <div class="inline mar-btm-20" >
+                                                <i class="fa fa-map-marker location-fa" aria-hidden="true"></i>
+                                                <p class="geo-light add-txt">
+                                                        House No 626, First Floor, Street 8,  Chaklala Scheme 3 Rawalpindi
+                                                </p>
+                                        </div>
+                                        <div class="inline mar-btm-20" >
+                                                <i class="fa fa-phone location-fa font-30" aria-hidden="true"></i>
+                                                <p class="geo-light add-txt mar-top-5 ">
+                                                        +92-321-5017659
+                                                </p>
+                                        </div>
+                                        <div class="inline mar-btm-20" >
+                                                <i class="fa fa-envelope location-fa font-30" aria-hidden="true"></i>
+                                                <p class="geo-light add-txt mar-top-5">
+                                                        hr@ideofuzion.com
+                                                </p>
+                                        </div>
+                                        <div>
+                                            <p class="raleway-bold followus-txt">
+                                                follow us
+                                            </p>
+                                            <div class="inline">
+                                                    <i class="fab fa-facebook-f location-fa font-30 followus-icons" aria-hidden="true"></i>
+                                                    <i class="fab  fa-twitter location-fa font-30 followus-icons" aria-hidden="true"></i>
+                                                    <i class="fab  fa-linkedin-in location-fa font-30 followus-icons" aria-hidden="true"></i>
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+                    
+                                </div>
+                             
+           
+    
+                    <div class="offset-md-6 col-md-6 no-padding">
+                        <div class="contct-us-frm-inner">
+                                <p class="geo-light contct-frm-txt">
+                                        Drop a message to get in touch
+                                </p>
+                                <div class="cntct-us-form">
+                                        <div class="form-group width60">
+                                                <input type="email" class="form-control nn-input " id="name" placeholder="Your Name">
+                                        </div>
+                                        <div class="form-group width60">
+                                                <input type="email" class="form-control nn-input " id="email" placeholder="Email">
+                                        </div>
+                                        <div class="form-group width60">
+                                                <input type="email" class="form-control nn-input " id="subject" placeholder="Subject">
+                                        </div>
+                                        <div class="form-group ">
+                                                <textarea class="form-control nn-input " rows="5" id="message"  placeholder="Message"></textarea>
+                                        </div>
+                                        <div>
+                                            <button type="button" class="send-btn" onclick="contactFormSubmit()">Send</button>
+                                        </div>
+                                      
+                                </div>
+                             
+                                <p class="geo-light contct-frm-txt2">
+                                        Copyright © 2018 Ideofuzion. All rights reserved.
+                                </p>
+                        </div>
+                       
+                    </div>           
+                      
+                </div>
+             
+            </div>
+        </div>
+    
+    </section>
+    <!-- contactus section -->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery.min.js" crossorigin="anonymous"></script>
@@ -336,6 +1243,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/toastr.js"></script>
     <script src="js/custom.js"></script>
 </body>
 
